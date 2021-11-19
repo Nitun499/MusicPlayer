@@ -1,0 +1,140 @@
+*,
+*::after,*::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+html{
+    font-size: 60%;
+    font-family: 'Jost', sans-serif;
+    min-width: 100px;
+    min-height: 100px;
+  
+}
+.main_div{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f6f6f6;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(#4E65FF   ,#92EFFD);
+}
+.music_container{
+    width: 35rem;
+    height: 55rem;
+    border-radius: 5px;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0,0,0,0.2);
+    background-color: #ffffff;
+    padding: 3rem;
+    text-align: center;
+}
+.music_container #title{
+    text-transform: uppercase;
+    word-spacing: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.3);
+}
+h3{
+    font-size: 15px;
+}
+.main_vol{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main_vol .fas-volume-mute{
+    margin:100px;
+
+}
+.music_container #artist{
+    text-transform: capitalize;
+    font-weight: 300;
+    color: #a08080;
+    letter-spacing: 0.3rem;
+    margin-bottom: 4rem;
+}
+.image_container{
+    width: 25rem;
+    height: 25rem;
+    margin: auto;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    box-shadow: 1.5rem 1.2rem 3rem 0.5rem rgba(0,0,0,0.3);
+}
+.music_control{
+    width: 20rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin:auto;
+    margin-top: 50px;
+}
+.music_control .fas{
+    color: #111111;
+    font-size: 2rem;
+    cursor: pointer;
+    filter: drop-shadow(1.5rem 1.2rem 3rem 0.5rem rgba(0,0,0,0.3));
+}
+.music_control .main_button{
+    width: 5rem;
+    height: 5rem;
+    background-color: #222;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.music_control .fas:hover{
+    color: grey;
+}
+.music_control .fa-play:hover{
+    background-color: #f6f6f6;
+    color: #222;
+    box-shadow: 0 2rem 2rem 0.2rem rgba(0,0,0,0.1);
+}
+.volume{
+    -webkit-appearance: none;
+    height: 2px;
+    width: 50%;
+    background-color: #222;
+    outline: none;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.volume:hover{
+    cursor: pointer;
+   opacity: 1;
+}
+.volume::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    border-radius: 50%;
+    width: 15px; /* Set a specific slider handle width */
+    height: 15px; /* Slider handle height */
+    background: gray; /* Green background */
+    /* cursor: pointer; Cursor on hover */
+  }
+.anime{
+    animation: rotateplayer 4s linear infinite ;
+}
+@keyframes rotateplayer {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+} 
